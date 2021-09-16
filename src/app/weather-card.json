@@ -1,0 +1,58 @@
+{
+  "type": "crm-card",
+  "data": {
+    "title": "Current weather",
+    "fetch": {
+      "targetFunction": "weatherCard",
+      "objectTypes": [
+        {
+          "name": "contacts",
+          "propertiesToSend": ["country", "city", "state"]
+        }
+      ]
+    },
+    "display": {
+      "properties": [
+        {
+          "name": "temperature",
+          "label": "Temperature",
+          "dataType": "STRING",
+          "options": []
+        },
+        {
+          "name": "feelsLike",
+          "label": "Feels like",
+          "dataType": "STRING",
+          "options": []
+        },
+        {
+          "name": "humidity",
+          "label": "Humidity",
+          "dataType": "STRING",
+          "options": []
+        },
+        {
+          "name": "high",
+          "label": "High",
+          "dataType": "STRING",
+          "options": []
+        },
+        {
+          "name": "low",
+          "label": "Low",
+          "dataType": "STRING",
+          "options": []
+        },
+        {
+          "name": "weatherTypes",
+          "label": "Weather types",
+          "dataType": "STRING",
+          "options": []
+        }
+      ]
+    },
+    "actions": {
+      "baseUrls": []
+    }
+  }
+}

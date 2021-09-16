@@ -1,0 +1,24 @@
+{
+  "name": "App",
+  "description": "",
+  "scopes": [
+    "contacts"
+  ],
+  "public": false,
+  "extensions": {
+    "crm": {
+      "cards": [
+        {
+          "file": "./weather-card.json"
+        }
+      ]
+    },
+    "automation": {
+      "actions": [
+        {
+          "file": "./fetch-temp-action.json"
+        }
+      ]
+    }
+  }
+}

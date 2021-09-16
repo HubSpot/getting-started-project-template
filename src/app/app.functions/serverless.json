@@ -1,0 +1,14 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "appFunctions": {
+    "weatherCard": {
+      "file": "weather.js",
+      "secrets": ["OPENWEATHER_API_KEY"]
+    },
+    "fetchTemperature": {
+      "file": "fetch-temperature.js",
+      "secrets": ["OPENWEATHER_API_KEY"]
+    }
+  }
+}
