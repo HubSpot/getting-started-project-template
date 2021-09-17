@@ -1,7 +1,7 @@
 [
   {
     "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
+    "label": "Text",
     "locked": false,
     "name": "text",
     "required": false,
