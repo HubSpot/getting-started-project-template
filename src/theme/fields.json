@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "name": "background_color",
+    "label": "Background color",
+    "required": false,
+    "locked": false,
+    "inline_help_text": "",
+    "help_text": "",
+    "type": "color",
+    "default": {
+      "color": "#ffffff",
+      "opacity": 100
+    }
+  }
+]

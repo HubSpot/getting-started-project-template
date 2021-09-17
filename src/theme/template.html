@@ -1,0 +1,24 @@
+<!--
+    templateType: page
+    label: Page template
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+  </head>
+  <body>
+
+    <div class="grid">
+      {% module 'card1' path="./info" %}
+      {% module 'card2' path="./info" %}
+      {% module 'card3' path="./info" %}
+      {% module 'card4' path="./info" %}
+    </div>
+    {{ standard_footer_includes }}
+  </body>
+</html>

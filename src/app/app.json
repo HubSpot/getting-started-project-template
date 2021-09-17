@@ -9,7 +9,7 @@
     "crm": {
       "cards": [
         {
-          "file": "./weather-card.json"
+          "file": "./crm-card.json"
         }
       ]
     },
