@@ -5,12 +5,5 @@
     "crmCard": {
       "file": "crm-card.js",
       "secrets": []
-    },
-    "fetchTemperature": {
-      "file": "fetch-temperature.js",
-      "secrets": [
-        "OPENWEATHER_API_KEY"
-      ]
     }
   }
-}

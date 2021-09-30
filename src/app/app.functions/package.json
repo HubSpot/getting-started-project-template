@@ -8,8 +8,5 @@
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@hubspot/api-client": "^3.2.6",
-    "dayjs": "^1.10.4"
-  }
+  "dependencies": {}
 }
