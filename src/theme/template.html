@@ -10,15 +10,78 @@
     <title>{{ content.html_title }}</title>
     <meta name="description" content="{{ content.meta_description }}">
     {{ standard_header_includes }}
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        color: #33475b;
+      }
+      h1 {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 14px;
+        margin: 0 0 28px;
+        line-height: 1.6;
+      }
+      main {
+        margin: 40px auto 0;
+        padding: 20px;
+        max-width: 1080px;
+      }
+      .grid {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(2, 1fr);
+        border: 1px solid #eaf0f6;
+        background-color: rgb(245, 248, 250);
+        padding: 18px;
+        margin: 30px 0;
+      }
+      footer {
+        margin-top: 20px;
+        text-align: center;
+      }
+      a,
+      a:active,
+      a:visited {
+        font-weight: 600;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: all 0.15s ease-out;
+        color: #0091ae;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      a:hover {
+        color: #007a8c;
+        text-decoration: underline;
+      }
+    </style>
   </head>
   <body>
 
+  <main>
+  <h1>
+    Welcome to HubSpot Projects!
+  </h1>
+  <p>
+    This is the getting started project template theme.
+  </p>
     <div class="grid">
-      {% module 'card1' path="./info" %}
-      {% module 'card2' path="./info" %}
-      {% module 'card3' path="./info" %}
-      {% module 'card4' path="./info" %}
+      {% module 'card1' path="./info" text="<h2>Learn more about themes</h2><p>Themes contain the website building blocks like template and modules.</p><a href=''>Learn more &rarr;</a>" %}
+      {% module 'card2' path="./info" text="<h2>Add flexibility with modules</h2><p>Give users the ability to change and edit page content in powerful ways by creating modules.</p>" %}
+      {% module 'card3' path="./info" text="<h2>Explore drag-and-drop</h2><p>Expand on the power of modules by defining drag-and-drop areas in your template.</p>" %}
+      {% module 'card4' path="./info" text="<h2>Integrate with the CRM</h2><p>Add a CRM card to provide HubSpot users with additional information about your contacts.</p>" %}
     </div>
+    </main>
+    <footer>
+        <img src="{{ get_asset_url('./hubspot.svg') }}">
+    </footer>
     {{ standard_footer_includes }}
   </body>
 </html>

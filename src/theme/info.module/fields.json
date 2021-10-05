@@ -1,6 +1,6 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
+    "default": "",
     "label": "Text",
     "locked": false,
     "name": "text",
