@@ -12,43 +12,55 @@
     {{ standard_header_includes }}
     <style>
       body {
+        margin: 0;
         font-family: Helvetica, Arial, sans-serif;
         color: #33475b;
       }
+      header {
+        color: #fff;
+        padding: 30px 0 70px;
+        background-image: url({{ get_asset_url('./hero.png') }});
+      }
       h1 {
-        font-size: 32px;
+        font-size: 30px;
         font-weight: 700;
+        margin: 16px 0 28px;
       }
       h2 {
+        font-size: 23px;
+        font-weight: 100;
+      }
+      h3 {
+        font-size: 21px;
+        font-weight: 500;
+      }
+      h4 {
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
+        margin: 0 0 16px;
       }
       p {
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 100;
         margin: 0 0 28px;
         line-height: 1.6;
       }
       main {
-        margin: 40px auto 0;
+        margin-top: 10px;
         padding: 20px;
-        max-width: 1080px;
       }
       .grid {
         display: grid;
         gap: 32px;
         grid-template-columns: repeat(2, 1fr);
-        border: 1px solid #eaf0f6;
-        background-color: rgb(245, 248, 250);
-        padding: 18px;
         margin: 30px 0;
-      }
-      footer {
-        margin-top: 20px;
-        text-align: center;
+        padding-bottom: 45px;
+        border-bottom: 1px solid #DFE3EB;
       }
       a,
       a:active,
       a:visited {
+        font-size: 13px;
         font-weight: 600;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -61,27 +73,127 @@
         color: #007a8c;
         text-decoration: underline;
       }
+      a[target="_blank"] {
+        position: relative;
+      }
+      a[target="_blank"]:after {
+        content: "";
+        display: block;
+        height: 12px;
+        width: 12px;
+        position: absolute;
+        left: 103%;
+        top: 50%;
+        transform: translateY(-50%);
+        background-image: url({{get_asset_url("./external.png")}});
+        background-size: contain;
+      }
+      .button {
+        color: #fff;
+        background-color: #FF7A59; 
+        border: 1px solid #FF7A59;
+        padding: 14px 24px;
+        border-radius: 3px;
+        margin-right: 5px;
+      }
+      .button:hover {
+        color: #FF7A59;
+        background-color: transparent; 
+        text-decoration: none;
+      }
+      .button--ghost {
+        color: #FF7A59;
+        background-color: transparent; 
+        border: 1px solid #FF7A59;
+      }
+      .button--ghost:hover {
+        color: #fff;
+        background-color: #FF7A59;
+        text-decoration: none;
+      }
+      .container {
+        margin: 0 auto;
+        max-width: 850px;
+      }
+      .cta {
+        margin: 40px 0 100px;
+      }
     </style>
   </head>
   <body>
 
-  <main>
-  <h1>
-    Welcome to HubSpot Projects!
-  </h1>
-  <p>
-    This is the getting started project template theme.
-  </p>
-    <div class="grid">
-      {% module 'card1' path="./info" text="<h2>Learn more about themes</h2><p>Themes contain the website building blocks like template and modules.</p><a href=''>Learn more &rarr;</a>" %}
-      {% module 'card2' path="./info" text="<h2>Add flexibility with modules</h2><p>Give users the ability to change and edit page content in powerful ways by creating modules.</p>" %}
-      {% module 'card3' path="./info" text="<h2>Explore drag-and-drop</h2><p>Expand on the power of modules by defining drag-and-drop areas in your template.</p>" %}
-      {% module 'card4' path="./info" text="<h2>Integrate with the CRM</h2><p>Add a CRM card to provide HubSpot users with additional information about your contacts.</p>" %}
+  <header>
+    <div class="container">
+      <h1>Sample project page template</h1>
+      <h2>This template is part of your sample project theme.</h2>
     </div>
-    </main>
-    <footer>
-        <img src="{{ get_asset_url('./hubspot.svg') }}">
-    </footer>
-    {{ standard_footer_includes }}
+  </header>
+  <main>
+    <div class="container">
+      <h3>All about projects and their components</h3>
+      <p>
+      Projects can contain themes (like the one this page template belongs to), private apps, extensions, and serverless functions. Before you build your own project from scratch, learn more about each of these components below.
+      </p>
+      <div class="grid">
+        {% module 'themes' 
+        path="./info"
+        heading="Themes" 
+        text="<p>A theme is a collection of templates and modules designed to work together to create a cohesive website. Themes also make it easy for marketers to create and edit website content without touching code.</p>" 
+        link_text="Go to theme docs" 
+        link_url={ 
+          "url" : { 
+            "type" : "EXTERNAL",
+            "href" : "https://developers.hubspot.com/docs/cms/building-blocks/themes"
+            }
+          }
+        %}
+        {% module 'private-apps'
+        path="./info"
+        heading="Private apps"
+        text="<p>Private apps are single-account integrations that use access tokens instead of API keys for authentication. We handle the configuration, which means you get the security of OAuth without all the work.</p>"
+        link_text="Go to private app docs"
+        link_url={ 
+          "url" : { 
+            "type" : "EXTERNAL",
+            "href" : "https://developers.hubspot.com/docs/cms/building-blocks/themes"
+            }
+          }
+        %}
+        {% module 'extensions'
+        path="./info"
+        heading="Extensions"
+        text="<p>Extensions are custom elements built on top of the standard HubSpot UI. They include CRM cards, timeline events, accounting features, and more.</p>"
+        link_text="Go to extension docs"
+        link_url={ 
+          "url" : { 
+            "type" : "EXTERNAL",
+            "href" : "https://developers.hubspot.com/docs/cms/building-blocks/themes"
+            }
+          }
+        %}
+        {% module 'serverless-functions'
+        path="./info"
+        heading="Serverless functions"
+        text="<p>Serverless functions allow you to use HubSpot’s APIs without exposing security info or using your own servers. </p>"
+        link_text="Go to serverless function docs"
+        link_url={ 
+          "url" : { 
+            "type" : "EXTERNAL",
+            "href" : "https://developers.hubspot.com/docs/cms/building-blocks/themes"
+            }
+          }
+        %}
+      </div>
+
+      <div class="cta">
+          <h3>Create your own project</h3>
+          <p>Want to build a new project from scratch? Get started with our project Quickstart Guide.</p>
+          <a href="" class="button">Start building with Quickstart Guide</a>
+          <a href="" class="button button--ghost">Go to developer homepage</a>
+      </div>
+    </div>
+  </main>
+
+  {{ standard_footer_includes }}
   </body>
-</html>
+</html> 
