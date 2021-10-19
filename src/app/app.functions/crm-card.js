@@ -16,14 +16,14 @@ exports.main = async (context = {}, sendResponse) => {
         demoObject,
         {
           objectId: 2,
-          title: "Kanye.Rest",
+          title: "Wisdom from Kanye",
           quote: data.quote || fallbackQuote,
         },
       ],
       primaryAction: {
         type: "SERVERLESS_ACTION_HOOK",
         serverlessFunction: "crmCard",
-        label: "Get new Quote",
+        label: "Get Inspired",
       },
     });
   } catch (error) {
