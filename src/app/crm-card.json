@@ -28,7 +28,13 @@
     "display": {
       "properties": [
         {
-          "name": "message",
+          "name": "quote",
+          "label": "Quote",
+          "dataType": "STRING",
+          "options": []
+        },
+        {
+          "name": "desc",
           "label": "What is this?",
           "dataType": "STRING",
           "options": []
