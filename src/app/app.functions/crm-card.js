@@ -22,7 +22,7 @@ exports.main = async (context = {}, sendResponse) => {
       ],
       primaryAction: {
         type: "SERVERLESS_ACTION_HOOK",
-        serverlessFunction: "kanye",
+        serverlessFunction: "crmCard",
         label: "Get new Quote",
       },
     });
