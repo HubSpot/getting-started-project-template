@@ -13,14 +13,7 @@
             "state"
           ],
           "actions": [
-            {
-              "type": "IFRAME",
-              "width": 890,
-              "height": 748,
-              "uri": "https://example.com/edit-iframe-contents",
-              "label": "Edit",
-              "associatedObjectProperties": []
-            }
+          
           ]
         }
       ]
