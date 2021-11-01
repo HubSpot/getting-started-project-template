@@ -7,14 +7,8 @@
       "objectTypes": [
         {
           "name": "contacts",
-          "propertiesToSend": [
-            "country",
-            "city",
-            "state"
-          ],
-          "actions": [
-          
-          ]
+          "propertiesToSend": [],
+          "actions": []
         }
       ]
     },
