@@ -1,3 +1,8 @@
 {
-  "label": "Getting Started Example Theme"
+  "label": "Getting Started Example Theme",
+  "preview_path": "./template.hubl.html",
+  "screenshot_path": "",
+  "enable_domain_stylesheets": false,
+  "license": "",
+  "responsive_breakpoints": []
 }
