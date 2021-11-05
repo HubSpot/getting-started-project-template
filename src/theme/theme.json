@@ -1,3 +1,8 @@
 {
-  "label": "CMS Theme"
+  "label": "Getting Started Example",
+  "preview_path": "./template.hubl.html",
+  "screenshot_path": "./assets/template_screenshot.png",
+  "enable_domain_stylesheets": false,
+  "license": "",
+  "responsive_breakpoints": []
 }
