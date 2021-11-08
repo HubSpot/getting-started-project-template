@@ -3,25 +3,12 @@
   "data": {
     "title": "App CRM Card",
     "fetch": {
-      "targetFunction": "crmCard",
+      "targetFunction": "crm-card",
       "objectTypes": [
         {
           "name": "contacts",
-          "propertiesToSend": [
-            "country",
-            "city",
-            "state"
-          ],
-          "actions": [
-            {
-              "type": "IFRAME",
-              "width": 890,
-              "height": 748,
-              "uri": "https://example.com/edit-iframe-contents",
-              "label": "Edit",
-              "associatedObjectProperties": []
-            }
-          ]
+          "propertiesToSend": [], 
+          "actions":[]
         }
       ]
     },
