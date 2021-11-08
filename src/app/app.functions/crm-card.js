@@ -4,7 +4,7 @@ exports.main = async (context = {}, sendResponse) => {
   const demoObject = {
     objectId: 1,
     title: "Sample project custom CRM card",
-    desc: `A custom CRM card is a UI extension that displays custom info from either HubSpot or an external system. It can also include custom actions—click the "Get Inspired" button to see example data from kanye.rest.`,
+    desc: `A custom CRM card is a UI extension that displays custom info from either HubSpot or an external system. It can also include custom actions—click the "Get Inspired" button to see example data from the ZenQuotes API.`,
   };
 
   try {
