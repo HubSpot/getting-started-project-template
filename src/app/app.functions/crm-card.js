@@ -1,7 +1,6 @@
 const axios = require("axios");
 
 exports.main = async (context = {}, sendResponse) => {
-  const fallbackQuote = `I think I do myself a disservice by comparing myself to Steve Jobs and Walt Disney and human beings that we've seen before. It should be more like Willy Wonka...and welcome to my chocolate factory.`;
   const demoObject = {
     objectId: 1,
     title: "Sample project custom CRM card",
@@ -9,15 +8,17 @@ exports.main = async (context = {}, sendResponse) => {
   };
 
   try {
-    const { data } = await axios.get("https://api.kanye.rest/");
+    const { data } = await axios.get("https://zenquotes.io/api/random");
 
     sendResponse({
       results: [
         demoObject,
         {
           objectId: 2,
-          title: "Wisdom from Kanye",
-          quote: data.quote || fallbackQuote,
+          link: "https://zenquotes.io/",
+          title: "Inspirational quotes provided by ZenQuotes API",
+          quote: data[0].q,
+          author: data[0].a,
         },
       ],
       primaryAction: {
@@ -27,8 +28,6 @@ exports.main = async (context = {}, sendResponse) => {
       },
     });
   } catch (error) {
-    throw new Error(
-      `Kanye must be sleeping because he's not talking': ${error.message}`
-    );
+    throw new Error(`There was an error fetching the quote': ${error.message}`);
   }
 };

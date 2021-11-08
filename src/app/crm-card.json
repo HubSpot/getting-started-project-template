@@ -38,6 +38,12 @@
           "label": "What is this?",
           "dataType": "STRING",
           "options": []
+        },
+        {
+          "name": "author",
+          "label": "Author",
+          "dataType": "STRING",
+          "options": []
         }
       ]
     },
