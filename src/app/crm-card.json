@@ -3,7 +3,7 @@
   "data": {
     "title": "App CRM Card",
     "fetch": {
-      "targetFunction": "crmCard",
+      "targetFunction": "crm-card",
       "objectTypes": [
         {
           "name": "contacts",
