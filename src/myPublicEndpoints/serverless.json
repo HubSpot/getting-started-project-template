@@ -1,0 +1,15 @@
+{
+  "runtime": "nodejs12.x",
+  "version": "1.0",
+  "secrets": ["APIKEY"],
+  "endpoints": {
+    "some-cool-endpoint": {
+      "method": "GET",
+      "file": "endpoint1.js"
+    },
+    "another-cool-endpoint": {
+      "method": "GET",
+      "file": "endpoint2.js"
+    }
+  }
+}
