@@ -1,7 +1,8 @@
 {
   "type": "crm-card",
+  "version": 2,
   "data": {
-    "title": "App CRM Card",
+    "title": "Inspirational Quote",
     "fetch": {
       "targetFunction": "crm-card",
       "objectTypes": [
