@@ -5,6 +5,14 @@ Create custom CRM cards in the new custom tab available on contact, company, dea
 
 In this short guide we'll highlight the new features available for CRM Card extensions, as well as how to use the Projects tool to create a custom card displayed in the middle of the CRM record page.
 
+<details>
+<summary>If you'd like to jump right to the end result...</summary>
+
+[Here are all the changes needed](https://github.com/HubSpot/getting-started-project-template/commit/608c858190aa9b786cd3a07c904b1bb5088f6d94) to migrate the "Getting Started" project app template to a custom tab extension with a card that looks like this:
+
+<img width="855" alt="Screen Shot 2022-05-02 at 11 57 59 AM" src="https://user-images.githubusercontent.com/30241/166266466-d6cab2ed-4e97-421b-9e91-c6dd40aa3230.png">
+
+</details>
 
 Step 1: Getting started with HubSpot Projects
 ---------------------------------------------
