@@ -55,11 +55,11 @@ exports.main = async (context = {}, sendResponse) => {
 
   // Assemble cards
   try {
-    const externalCard = await getExternalCard();
     const internalCard = await getInternalCard();
+    const externalCard = await getExternalCard();
 
     sendResponse({
-      results: [staticCard, externalCard, internalCard],
+      results: [staticCard, internalCard, externalCard],
       primaryAction: {
         type: 'SERVERLESS_ACTION_HOOK',
         serverlessFunction: 'crm-card',
