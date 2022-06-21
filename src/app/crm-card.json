@@ -7,7 +7,7 @@
       "objectTypes": [
         {
           "name": "contacts",
-          "propertiesToSend": [], 
+          "propertiesToSend": [],
           "actions":[]
         }
       ]
@@ -31,6 +31,11 @@
           "label": "Author",
           "dataType": "STRING",
           "options": []
+        },
+        { "name": "firstname",
+          "label": "First name",
+          "dataType": "STRING",
+          "options":[]
         }
       ]
     },
