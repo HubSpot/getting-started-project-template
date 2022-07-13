@@ -44,7 +44,7 @@ exports.main = async (context = {}, sendResponse) => {
       return {
         objectId: 3,
         title: 'First contact in account',
-        firstname: resp.body.results[0].properties.firstname,
+        firstname: resp.results[0].properties.firstname,
       };
     } catch (error) {
       throw new Error(
