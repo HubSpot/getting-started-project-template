@@ -48,7 +48,7 @@ exports.main = async (context = {}, sendResponse) => {
 
     sendResponse({ sections: [introMessage, ...quoteSections] });
   } catch (error) {
-    // Creates an error feedback banner when it catches an error
+    // "message" will create an error feedback banner when it catches an error
     sendResponse({
       message: {
         type: 'ERROR',
