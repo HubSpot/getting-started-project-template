@@ -1,4 +1,5 @@
 {
   "name": "project_name",
-  "srcDir": "src"
+  "srcDir": "dist",
+  "preUploadScript": "npm run build"
 }

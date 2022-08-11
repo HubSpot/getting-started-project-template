@@ -1,6 +1,6 @@
 {
-  "name": "App",
-  "description": "",
+  "name": "Example App",
+  "description": "An example private app that contains a single CRM card extension.",
   "scopes": [
     "crm.objects.contacts.read",
     "crm.objects.contacts.write"
@@ -10,7 +10,8 @@
     "crm": {
       "cards": [
         {
-          "file": "./crm-card.json"
+          "file": "./crm-card.json",
+          "version": "2"
         }
       ]
     }
