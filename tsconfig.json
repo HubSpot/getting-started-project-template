@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-      "outDir": "dist",
+      "outDir": "hubspotDist",
       "rootDir": "./project"
   }
 }

@@ -5,7 +5,7 @@
     "typescript": "^4.7.4"
   },
   "scripts": {
-    "copy-files": "rsync -av --exclude='*.ts' ./project/ dist",
+    "copy-files": "rsync -av --exclude='*.ts' ./project/ hubspotDist",
     "ts-compile": "tsc",
     "build": "npm run ts-compile && npm run copy-files"
   }
