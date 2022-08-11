@@ -18,6 +18,7 @@ jobs:
       - name: Commit Changes
         uses: EndBug/add-and-commit@v9
         with:
+          add: . -f dist
           default_author: github_actor
           message: 'HubSpot Build & Commit'
           # The way the action should handle pathspec errors from the add and remove commands. Three options are available:
