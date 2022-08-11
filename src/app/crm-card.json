@@ -1,46 +1,17 @@
 {
   "type": "crm-card",
+  "version": "2",
   "data": {
-    "title": "App CRM Card",
+    "title": "Example CRM Card",
     "fetch": {
       "targetFunction": "crm-card",
       "objectTypes": [
         {
           "name": "contacts",
-          "propertiesToSend": [],
+          "propertiesToSend": ["firstname"],
           "actions":[]
         }
       ]
-    },
-    "display": {
-      "properties": [
-        {
-          "name": "quote",
-          "label": "Quote",
-          "dataType": "STRING",
-          "options": []
-        },
-        {
-          "name": "desc",
-          "label": "What is this?",
-          "dataType": "STRING",
-          "options": []
-        },
-        {
-          "name": "author",
-          "label": "Author",
-          "dataType": "STRING",
-          "options": []
-        },
-        { "name": "firstname",
-          "label": "First name",
-          "dataType": "STRING",
-          "options":[]
-        }
-      ]
-    },
-    "actions": {
-      "baseUrls": []
     }
   }
 }
