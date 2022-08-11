@@ -1,5 +1,5 @@
 {
   "name": "project_name",
-  "srcDir": "hubspotDist",
+  "srcDir": "dist",
   "preUploadScript": "npm run build"
 }
