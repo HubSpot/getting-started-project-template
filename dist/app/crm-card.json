@@ -1,0 +1,17 @@
+{
+  "type": "crm-card",
+  "version": "2",
+  "data": {
+    "title": "Example CRM Card",
+    "fetch": {
+      "targetFunction": "crm-card",
+      "objectTypes": [
+        {
+          "name": "contacts",
+          "propertiesToSend": ["firstname"],
+          "actions":[]
+        }
+      ]
+    }
+  }
+}
