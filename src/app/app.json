@@ -10,8 +10,7 @@
     "crm": {
       "cards": [
         {
-          "file": "./crm-card.json",
-          "version": "2"
+          "file": "./crm-card.json"
         }
       ]
     }
