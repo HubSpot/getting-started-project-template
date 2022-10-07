@@ -3,7 +3,7 @@
   "version": "1.0",
   "appFunctions": {
     "crm-card": {
-      "file": "crm-card.js",
+      "file": "example-card.js",
       "secrets": []
     }
   }
