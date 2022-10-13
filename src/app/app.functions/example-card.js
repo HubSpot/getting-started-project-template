@@ -28,7 +28,7 @@ exports.main = async (context = {}, sendResponse) => {
     {
       type: "text",
       format: "markdown",
-      text: "You can explore [more components](https://app.hubspot.com/l/extensible-ui/), or try code samples. When you get stuck, look at your [build or deploy logs](https://app.hubspot.com/l/developer-projects/) or [serverless functions logs](https://app.hubspot.com/l/private-apps/).",
+      text: "You can explore more [code samples](https://github.com/HubSpot/ui-extensions-examples) or UI components in the [CRM card builder](https://app.hubspot.com/l/extensible-ui/), or try code samples. If you get stuck, take look at your [build or deploy logs](https://app.hubspot.com/l/developer-projects/) or [serverless functions logs](https://app.hubspot.com/l/private-apps/).",
     },
   ];
 
