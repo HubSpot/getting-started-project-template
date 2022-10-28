@@ -1,7 +1,21 @@
 // For external API calls
 const axios = require("axios");
 
-exports.main = async (context = {}, sendResponse) => {
+const appConfig = {
+  title: "Example CRM Card",
+  location: "crm.record.tab",
+  fetch: {
+    objectTypes: [
+      {
+        "name": "contacts",
+        "propertiesToSend": ["firstname"]
+      }
+    ]
+  },
+  secrets: []
+};
+
+const appFunction = async (context = {}, sendResponse) => {
   // Store contact firstname, configured as propertiesToSend in crm-card.json
   const { firstname } = context.propertiesToSend;
 
@@ -80,3 +94,8 @@ exports.main = async (context = {}, sendResponse) => {
     });
   }
 };
+
+exports.main =  {
+  appConfig,
+  appFunction
+}
